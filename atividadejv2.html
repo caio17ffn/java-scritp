@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Boas-Vindas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px; color: rgb(255, 255, 255);
+      background-color:  rgb(146, 146, 148);
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 16px; color: aliceblue;
+      border-color: aliceblue;
+      background-color:rgb(143, 168, 182);
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>Seja bem-vindo!</h1>
+  <button onclick="saudar()">Clique aqui</button>
+
+  <script>
+    function saudar() {
+      const nome = prompt("Qual é o seu nome?");
+      if (nome) {
+        const idade = prompt(`Olá, ${nome}! Quantos anos você tem?`);
+        if (idade) {
+          alert(`Que maravilha! ${nome} tem ${idade} anos!`);
+        }
+      }
+    }
+  </script>
+</body>
+</html>
